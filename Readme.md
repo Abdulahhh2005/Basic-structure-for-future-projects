@@ -7,14 +7,15 @@
 
   ## 1. Quick start
     1. Copy or clone this starter project.
-    2. Install dependencies: 'npm install'.
-    3. Initialisation git for working with remote repo: 'git init'.
-    4. (Optional) Update Parcel, Prettier and Rimraf to the latest versions: 'npm run update'.
-    5. Clear old build and cache: 'npm run clean'.
-    If npm run clean does not remove everything (sometimes Parcel gives errors about missing cache),  delete manually:
-      'The folders dist/ and .parcel-cache/'.
-      '(Optional) node_modules/'.
-    6. Start development server: 'npm start'.
+    2. Delete the `.git` folder to unlink the remote repository.
+    3. Install dependencies: 'npm install'.
+    4. Initialisation git for working with remote repo: 'git init'.
+    5. (Optional) Update Parcel, Prettier and Rimraf to the latest versions: 'npm run update'.
+    6. Clear old build and cache: 'npm run clean'.
+       If npm run clean does not remove everything (sometimes Parcel gives errors about missing cache),  delete manually:
+         'The folders dist/ and .parcel-cache/'.
+         '(Optional) node_modules/'.
+    7. Start development server: 'npm start'.
 
   ## 2. Package.json commands
     1. 'npm run start' = Start dev server and open browser.
