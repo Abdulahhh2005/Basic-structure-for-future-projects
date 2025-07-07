@@ -9,24 +9,25 @@
     1. Copy or clone this starter project.
     2. Delete the `.git` folder to unlink the remote repository.
     3. Install dependencies: 'npm install'.
-    4. Initialisation git for working with remote repo: 'git init'.
+    4. Initialize Git to work with a remote repository: 'git init'.
     5. (Optional) Update Parcel, Prettier and Rimraf to the latest versions: 'npm run update'.
     6. Clear old build and cache: 'npm run clean'.
        If npm run clean does not remove everything (sometimes Parcel gives errors about missing cache),  delete manually:
-         'The folders dist/ and .parcel-cache/'.
+         'The folders dist/ and .parcel-cache/',
          '(Optional) node_modules/'.
     7. Start development server: 'npm start'.
+    8. Preparing to add code 'git add ./src'.
+    9. Make a commit with a message: 'git commit -m "your message"'.
 
   ## 2. Package.json commands
-    1. 'npm run start' = Start dev server and open browser.
+    1. 'npm run start' = Start development server and open browser.
     2. 'npm run build' = Build project to dist/ folder.
     3. 'npm run clean' = Delete dist/ and .parcel-cache/ folders.
-    4. 'npm run update' = Update Parcel to latest version.
-    5. 'npm run format' = Format code with Prettier.
+    4. 'npm run update' = Update Parcel, Prettier, and Rimraf to latest version.
+    5. 'npm run format' = Format code using Prettier.
 
   ## 3. Extra Commands (Not in package.json)
     1. 'npx parcel --version' = parcel version.
-    2. 'npm remove parcel-bundler' = remove parcel.
 
 # Notes
   1. `rimraf` is used instead of `rm -rf` for cross-platform compatibility (especially on Windows).
