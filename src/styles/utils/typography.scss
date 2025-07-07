@@ -1,0 +1,117 @@
+// Main styles
+@mixin body-text {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: custom-settings;
+  letter-spacing: custom-settings;
+}
+
+@mixin uppercase {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: uppercase;
+  letter-spacing: custom-settings;
+}
+
+// Mobile headings
+@mixin mobile-headings-h1 {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: custom-settings;
+  letter-spacing: custom-settings;
+}
+
+@mixin mobile-headings-h2 {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: custom-settings;
+  letter-spacing: custom-settings;
+}
+
+// Tablet headings
+@mixin tablet-headings-h1 {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: custom-settings;
+  letter-spacing: custom-settings;
+}
+
+@mixin tablet-headings-h2 {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: custom-settings;
+  letter-spacing: custom-settings;
+}
+
+// Desktop headings 
+@mixin desktop-headings-h1 {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: custom-settings;
+  letter-spacing: custom-settings;
+}
+
+@mixin desktop-headings-h2 {
+  font-family: custom-settings;
+  font-size: custom-settings;
+  font-weight: custom-settings;
+  font-style: custom-settings;
+  line-height: custom-settings;
+  text-transform: custom-settings;
+  letter-spacing: custom-settings;
+}
+
+
+// Connecting styles
+body {
+  @include body-text;
+}
+
+span {
+  @include uppercase;
+}
+
+h1 {
+  @include mobile-headings-h1;
+
+  @include on-tablet {
+    @include tablet-headings-h1;
+  }
+
+  @include on-laptop {
+    @include desktop-headings-h1;
+  }
+}
+
+h2 {
+  @include mobile-headings-h2;
+
+  @include on-tablet {
+    @include tablet-headings-h2;
+  }
+
+  @include on-laptop {
+    @include desktop-headings-h2;
+  }
+}
